@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<title>DarkMode</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="logo">ICare - Home Care</div>
+
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+
+        </ul>
+
+        <div onclick="toggleDarkMode()" class="dark-mode-toggle">Dark Mode</div>
+    </nav>
+    <!--Seção de Cards-->
+    <section class="cards">
+        <div class="card">
+            <h3>OPÇÃO 1</h3>
+            <p>Sou Cuidador
+            </p>
+
+        </div> <!--FIM Card 1-->
+        <div class="card">
+            <h3>OPÇÃO 2</h3>
+            <p>Preciso de um Cuidador
+            </p>
+
+        </div> <!--FIM Card 2-->
+        
+    </section>
+    <footer>
+        <p>Elton Macedo - 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+    </script>
+
+</body>
